@@ -148,7 +148,7 @@ export default function Footer() {
       </div>
 
       {/* 👉 Popup Trigger Button */}
-      <div className="text-center">
+      <div className="text-center block md:hidden">
         <button
           onClick={() => window.dispatchEvent(new Event("openPopup"))}
           className="bg-[#33398B] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#4a4fa0] transition cursor-pointer"
