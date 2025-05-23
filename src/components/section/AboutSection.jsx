@@ -19,7 +19,7 @@ export default function AboutSection() {
           <img
             src={aboutImage}
             alt="Eldeco Ballads of Bliss"
-            className="w-full h-full object-contain  transition-transform duration-500 rounded-2xl"
+            className="w-full h-full sm:object-contain  transition-transform duration-500 rounded-2xl"
           />
         </div>
 
