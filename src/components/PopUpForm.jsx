@@ -186,7 +186,7 @@ export default function PopupForm() {
               {/* Close button */}
               <button
                 onClick={closeModal}
-                className="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-2xl cursor-pointer z-10"
+                className="absolute top-3 right-4 text-black font-bold  hover:text-gray-800 text-4xl cursor-pointer z-10"
               >
                 ×
               </button>
