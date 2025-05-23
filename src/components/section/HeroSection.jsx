@@ -77,12 +77,19 @@ const HeroSection = () => {
                   {slide.description}
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 text-white">
-                  <a
+                  {/* <a
                     className="rounded-lg border bg-[#33398B] px-6 py-3 mb-6 font-semibold cursor-pointer"
                     href="#contact"
                   >
                     {slide.buttonText}
-                  </a>
+                  </a> */}
+
+                  <button
+                    className="rounded-lg border bg-[#33398B] px-6 py-3 mb-6 font-semibold cursor-pointer"
+                    onClick={() => window.dispatchEvent(new Event("openPopup"))}
+                  >
+                    {slide.buttonText}
+                  </button>
                 </div>
               </div>
             </div>
