@@ -24,7 +24,7 @@ const GallerySection = () => {
             <p className="text-[#6565A4] font-bold">
               Sector 22D, Yamuna Expressway
             </p>
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-[#33398B]">
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-[#007B51]">
               ELDECO
             </h2>
             {/* <p className="text-[#6565A4] text-xl">5.0 lakh</p> */}

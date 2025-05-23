@@ -1,3 +1,4 @@
+import BookButton from "./components/layout/BookButton.jsx";
 import Footer from "./components/layout/Footer.jsx";
 import Navbar from "./components/layout/Navbar.jsx";
 import PopupForm from "./components/PopUpForm.jsx";
@@ -22,6 +23,7 @@ const App = () => {
       <LocationSection />
       <ContactSection />
       <Footer />
+      <BookButton />
     </>
   );
 };
