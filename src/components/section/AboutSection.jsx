@@ -15,11 +15,11 @@ export default function AboutSection() {
           }}
         />
         {/* 📷 Image Section */}
-        <div className="relative h-[270px] sm:h-[400px] md:h-[700px] border-[#6565A4]  border rounded-2xl">
+        <div className="relative overflow-hidden h-[270px] sm:h-[400px] md:h-[700px] border-[#6565A4]  border rounded-2xl">
           <img
             src={aboutImage}
             alt="Eldeco Ballads of Bliss"
-            className="w-full h-full transition-transform duration-500 rounded-2xl"
+            className="w-full h-full object-contain  transition-transform duration-500 rounded-2xl"
           />
         </div>
 
