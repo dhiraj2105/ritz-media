@@ -83,18 +83,6 @@ const FloorPlansSection = () => {
           animation: wave 4s ease-in-out infinite;
         }
       `}</style>
-
-      {/* Blur fade effect at the bottom */}
-      <div
-        className="absolute bottom-0 left-0 w-full h-24 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f5f8fa 100%)",
-          backdropFilter: "blur(8px)",
-          WebkitBackdropFilter: "blur(8px)",
-          zIndex: 5,
-        }}
-      />
     </section>
   );
 };
