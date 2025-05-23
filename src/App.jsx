@@ -1,22 +1,28 @@
-import React from "react";
-import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
-import Highlights from "./components/highlights/Highlights";
-import Prices from "./components/prices/Prices";
-import Amenities from "./Amenities/Amenities";
-import Gallery from "./Gallery/Gallery";
+import Footer from "./components/layout/Footer.jsx";
+import Navbar from "./components/layout/Navbar.jsx";
+import PopupForm from "./components/PopUpForm.jsx";
+import AboutSection from "./components/section/AboutSection.jsx";
+import AmenitiesSecction from "./components/section/AmenitiesSecction.jsx";
+import ContactSection from "./components/section/ContactSection.jsx";
+import FloorPlansSection from "./components/section/FloorPlansSection.jsx";
+import GallerySection from "./components/section/GallerySection.jsx";
+import HeroSection from "./components/section/HeroSection";
+import LocationSection from "./components/section/LocationSection.jsx";
 
 const App = () => {
   return (
-    <div className="main">
+    <>
+      <PopupForm />
       <Navbar />
-      <Hero />
-      <Highlights />
-      <Prices />
-      <Amenities />
-      <Gallery />
-    </div>
+      <HeroSection />
+      <AboutSection />
+      <GallerySection />
+      <AmenitiesSecction />
+      <FloorPlansSection />
+      <LocationSection />
+      <ContactSection />
+      <Footer />
+    </>
   );
 };
 

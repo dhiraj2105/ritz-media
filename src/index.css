@@ -1,9 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "JetBrains Mono";
-}
+@import "tailwindcss";
 
-body {
-  background-color: #f3f3f3;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
