@@ -6,7 +6,7 @@ import img3 from "../../assets/images/gallery-5.jpg";
 
 const floorPlans = [
   {
-    title: "3 BHK with 2 Toilets – 1550 sq. ft.",
+    title: "3 BHK – 2 Toilets | 1550 sq. ft.",
     imageUrl: img1,
   },
   {
@@ -25,7 +25,7 @@ const FloorPlansSection = () => {
   return (
     <section
       id="floorplans"
-      className="px-4 md:px-10 py-10 bg-[#f5f8fa] sm-h-screen"
+      className="px-4 md:px-10 py-3 sm:py-10 bg-[#f5f8fa] sm-h-screen"
     >
       <div className="relative bg-[#FEFFFE] rounded-tr-[4rem] rounded-bl-[4rem] p-6 md:p-12  overflow-hidden  mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Decorative pink blob top-right */}

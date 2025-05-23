@@ -87,14 +87,14 @@ export default function ContactSection() {
         <div className="col-span-1 sm:col-span-2 flex flex-col sm:flex-row gap-4 justify-center mt-2">
           <button
             type="submit"
-            className="w-full sm:w-auto bg-[#0041D9] font-bold px-8 py-4 rounded-full shadow-md hover:bg-blue-800 hover:scale-105 transition-transform duration-300 ease-in-out text-white"
+            className="w-full sm:w-auto bg-[#0041D9] font-bold px-8 py-4 rounded-full shadow-md hover:bg-blue-800 hover:scale-105 transition-transform duration-300 ease-in-out text-white cursor-pointer"
           >
-            Book Your Dream Home
+            Register for Pre-Launch Offers{" "}
           </button>
           <button
             type="button"
             onClick={() => alert("Connecting you to our expert...")}
-            className="w-full sm:w-auto bg-gray-800 text-white font-bold px-8 py-4 rounded-full hover:bg-gray-900 hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="w-full sm:w-auto bg-[#6565A4] text-white font-bold px-8 py-4 rounded-full  hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
           >
             Talk to Our Expert Now
           </button>

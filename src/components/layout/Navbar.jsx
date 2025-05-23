@@ -16,7 +16,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full z-10000">
+    <header className=" w-full z-10000">
       <nav className="bg-[#eff5fa] backdrop-blur-lg px-10 py-9 flex justify-between items-center transition-all duration-300">
         {/* Logo */}
         <div className="text-3xl font-bold text-[#007B51]">

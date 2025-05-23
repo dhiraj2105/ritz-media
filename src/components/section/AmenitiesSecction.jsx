@@ -91,7 +91,10 @@ const AmenitiesSection = () => {
     [];
 
   return (
-    <section id="amenities" className="px-4 md:px-10 py-16 bg-[#f5f8fa]">
+    <section
+      id="amenities"
+      className="px-4 md:px-10 py-15 sm:py-0 bg-[#f5f8fa]"
+    >
       <div className="relative bg-white rounded-tr-[4rem] rounded-2xl p-6 md:p-12  overflow-hidden">
         <div
           className="absolute -top-10 -right-10 w-50 h-50 bg-pink-200 opacity-50 z-0 wave-blob pointer-events-none"

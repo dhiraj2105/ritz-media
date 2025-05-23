@@ -68,7 +68,7 @@ export default function Footer() {
       <hr className="my-6 border-gray-300" />
 
       <div className="text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Skyline Residences. All rights reserved.
+        © {new Date().getFullYear()} Eldeco. All rights reserved.
       </div>
     </footer>
   );

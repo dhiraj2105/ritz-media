@@ -19,7 +19,7 @@ const GallerySection = () => {
     >
       <div className="flex flex-col md:flex-row h-full">
         {/* Left Side: Text */}
-        <div className="md:w-1/2 w-full flex items-start sm:items-center text-left p-5">
+        <div className="md:w-1/2 w-full flex items-start sm:items-center text-left p-2">
           <div>
             <p className="text-[#6565A4] font-bold">
               Sector 22D, Yamuna Expressway
@@ -27,12 +27,13 @@ const GallerySection = () => {
             <h2 className="text-4xl md:text-6xl font-bold mb-4 text-[#33398B]">
               ELDECO
             </h2>
-            <p className="text-[#6565A4] text-xl">5.0 lakh</p>
+            {/* <p className="text-[#6565A4] text-xl">5.0 lakh</p> */}
             <p className="text-lg text-[#6565A4]">
-              Enjoy a selection of our most stunning visuals. There are many
-              variations of passages of lorem ipsum available, but the majority
-              have suffered alteration in some form by injected humour or
-              randomised words which don't look even slightly believable.
+              Get a glimpse of the lifestyle that awaits you at Song of Life.
+              From elegant interiors and lush landscapes to aerial views and
+              architectural renders, our upcoming gallery will bring the project
+              to life. Stay tuned for exclusive visuals as we approach the grand
+              launch.
             </p>
           </div>
         </div>
