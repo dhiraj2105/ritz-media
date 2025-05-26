@@ -64,7 +64,7 @@ const FloorPlansSection = () => {
           <img
             src={floorPlans[selectedIndex].imageUrl}
             alt="Selected Floor Plan"
-            className="w-full h-full object-cover rounded-lg shadow-lg transition-all duration-300"
+            className="w-full h-full object-cover rounded-[20px] shadow-lg transition-all duration-300"
           />
         </div>
       </div>

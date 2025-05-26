@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 
 import heroImage from "../../assets/images/hero.jpeg";
 import heroImage2 from "../../assets/images/gallery-1.jpg";
-import heroImage3 from "../../assets/images/gallery-2.jpg"; // Add more if needed
+import heroImage3 from "../../assets/images/gallery-2.jpg";
 
 const slides = [
   {
@@ -35,7 +35,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="px-2 md:px-10 py-2 pb-1 md:py-8 mx-auto sm:h-screen bg-[#f5f8fa] md:-mb-17 mt-18 sm:mt-0"
+      className=" px-4 md:px-10 relative h-[90vh] overflow-hidden bg-[#f5f8fa]"
     >
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -47,45 +47,39 @@ const HeroSection = () => {
           nextEl: ".hero-next",
           prevEl: ".hero-prev",
         }}
+        className="h-full"
       >
         {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 items-center rounded-bl-[4rem] md:rounded-bl-[5rem] rounded-tr-[4rem] md:rounded-tr-[5rem] bg-white overflow-hidden">
-              {/* Decorative pink blob top-right */}
+          <SwiperSlide key={index} className="h-full">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 h-full items-center rounded-bl-[3rem] md:rounded-bl-[5rem] rounded-tr-[3rem] md:rounded-tr-[5rem] bg-white overflow-hidden">
+              {/* Decorative pink blob */}
               <div
-                className="absolute -top-10 -right-10 w-60 h-60 bg-pink-200 opacity-50 z-0 wave-blob"
+                className="absolute sm:-top-10 sm:-right-10 right-0 bottom-0 w-60 h-60 bg-pink-200 opacity-50 z-0 wave-blob pointer-events-none"
                 style={{
                   borderRadius: "49% 25% 25% 71% / 30% 25% 25% 70%",
                 }}
               />
 
               {/* Left image */}
-              <div className="relative z-10 h-[300px] sm:h-[400px] md:h-[750px]">
+              <div className="relative z-10 w-full h-full">
                 <img
                   src={slide.image}
                   alt={`hero ${index}`}
-                  className="w-full h-full object-cover transition-transform duration-500 rounded-bl-[4rem] md:rounded-bl-[5rem]"
+                  className="w-full h-full object-cover rounded-bl-[3rem] md:rounded-bl-[5rem]"
                 />
               </div>
 
               {/* Right content */}
-              <div className="relative z-10 px-4 text-center md:text-left">
-                <h1 className="text-[25px] md:text-6xl font-bold text-[#33398B] mb-4">
+              <div className="relative z-10 px-6 md:px-10 text-center md:text-left min-w-0 h-full flex flex-col justify-center">
+                <h1 className="text-[30px] sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#33398B] mb-4">
                   {slide.title}
                 </h1>
-                <p className="text-[#6565A4] mb-6 text-sm md:text-[17px]">
+                <p className="text-[#6565A4] mb-6 text-sm md:text-base lg:text-lg">
                   {slide.description}
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 text-white">
-                  {/* <a
-                    className="rounded-lg border bg-[#33398B] px-6 py-3 mb-6 font-semibold cursor-pointer"
-                    href="#contact"
-                  >
-                    {slide.buttonText}
-                  </a> */}
-
                   <button
-                    className="rounded-lg border bg-[#33398B] px-6 py-3 mb-6 font-semibold cursor-pointer"
+                    className="rounded-lg border bg-[#33398B] px-6 py-3 font-semibold cursor-pointer"
                     onClick={() => window.dispatchEvent(new Event("openPopup"))}
                   >
                     {slide.buttonText}
@@ -98,7 +92,7 @@ const HeroSection = () => {
       </Swiper>
 
       {/* Swiper Navigation */}
-      <div className="absolute bottom-15 right-6 gap-3 z-20 hidden sm:flex">
+      <div className="absolute bottom-6 right-6 z-20 hidden sm:flex gap-3">
         <button className="hero-prev bg-[#33398B] text-white px-4 py-2 rounded-full text-sm sm:text-base">
           Prev
         </button>
