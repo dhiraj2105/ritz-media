@@ -35,7 +35,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className=" px-4 md:px-10 relative h-[90vh] overflow-hidden bg-[#f5f8fa]"
+      className=" px-4 md:px-10 relative h-[90vh] overflow-hidden bg-[#f5f8fa] mt-15"
     >
       <Swiper
         modules={[Navigation, Autoplay]}
